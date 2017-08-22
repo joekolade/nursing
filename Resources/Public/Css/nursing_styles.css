@@ -1,3 +1,11 @@
-
+.tx-nursing-list {
+  display: grid;
+  grid-template-rows: 1fr 200px;
+  grid-template-areas: "content sidebar";
+  grid-gap: 30px; }
+  .tx-nursing-list .tx-nursing__content {
+    grid-area: content; }
+  .tx-nursing-list .tx-nursing__aside {
+    grid-area: sidebar; }
 
 /*# sourceMappingURL=nursing_styles.css.map */

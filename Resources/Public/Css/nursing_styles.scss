@@ -2,6 +2,24 @@
 // ext:nursing
 //
 
-.tx_nursing {
+$filter-width-md: 200px;
+$grid-gap: 30px;
 
+.tx-nursing {
+
+  	// List
+
+  	&-list {
+	  display: grid;
+	  grid-template-rows: 1fr $filter-width-md;
+	  grid-template-areas: "content sidebar";
+	  grid-gap: $grid-gap;
+
+	  .tx-nursing__content {
+		grid-area: content;
+	  }
+	  .tx-nursing__aside {
+		grid-area: sidebar;
+	  }
+	}
 }

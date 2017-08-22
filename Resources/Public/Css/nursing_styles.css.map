@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAWG,gBAAO;EACP,OAAO,EAAE,IAAI;EACb,kBAAkB,EAAE,SAAoB;EACxC,mBAAmB,EAAE,iBAAiB;EACtC,QAAQ,EAVA,IAAI;EAYZ,qCAAqB;IACtB,SAAS,EAAE,OAAO;EAEjB,mCAAmB;IACpB,SAAS,EAAE,OAAO",
+"sources": ["nursing_styles.scss"],
 "names": [],
 "file": "nursing_styles.css"
 }
