@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2017-08-22T11:55:11Z" product-name="nursing">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2017-08-22T11:55:11Z" product-name="nursing">
 		<header/>
 		<body>
 			<trans-unit id="tx_nursing_domain_model_position">
 				<source>Position</source>
+				<target>Pflegestelle</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_position.title">
 				<source>Title</source>
+				<target>Titel</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_position.description">
 				<source>Description</source>
+				<target>Beschreibung</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_position.images">
 				<source>Images</source>
+				<target>Bilder</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_position.topjob">
 				<source>TOP-Job</source>
@@ -23,81 +27,103 @@
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_position.employments">
 				<source>Employments</source>
+				<target>Beschäftigungsverhältnisse</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_position.types">
 				<source>Types</source>
+				<target>Stellenarten</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_position.extras">
 				<source>Extras</source>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_position.location">
 				<source>Location</source>
+				<target>Ort</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_position.employer">
 				<source>Employer</source>
+				<target>Arbeitgeber</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_employment">
 				<source>Employment</source>
+				<target>Beschäftigungsverhältnis</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_employment.title">
 				<source>Title</source>
+				<target>Titel</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_employer">
 				<source>Employer</source>
+				<target>Arbeitgeber</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_employer.title">
 				<source>Title</source>
+				<target>Titel</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_employer.logo">
 				<source>Logo</source>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_employer.address">
 				<source>Address</source>
+				<target>Adresse</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_employer.description">
 				<source>Description</source>
+				<target>Beschreibung</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_employer.email">
 				<source>Email</source>
+				<target>E-Mail</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_employer.url">
 				<source>Url</source>
+				<target>Webseite</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_employer.tx_csseo">
-				<source>Tx Csseo</source>
+				<source>Csseo</source>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_location">
 				<source>Location</source>
+				<target>Ort</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_location.zip">
 				<source>Zip</source>
+				<target>PLZ</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_location.title">
 				<source>Title</source>
+				<target>Titel</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_location.regions">
 				<source>Regions</source>
+				<target>Regionen</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_region">
 				<source>Region</source>
+				<target>Region</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_region.title">
 				<source>Title</source>
+				<target>Titel</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_type">
 				<source>Type</source>
+				<target>Stellenart</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_type.title">
 				<source>Title</source>
+				<target>Titel</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_extra">
 				<source>Extra</source>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_extra.title">
 				<source>Title</source>
+				<target>Titel</target>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_extra.note">
 				<source>Note</source>
+				<target>Bemerkung</target>
 			</trans-unit>
 		</body>
 	</file>
