@@ -24,6 +24,10 @@ plugin.tx_nursing_list {
     }
 }
 
+page.includeCSS {
+    tx_nursing = EXT:nursing/Resources/Public/Css/nursing_styles.css
+}
+
 # these classes are only used in auto-generated templates
 plugin.tx_nursing._CSS_DEFAULT_STYLE (
     textarea.f3-form-error {
