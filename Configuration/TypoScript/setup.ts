@@ -27,37 +27,3 @@ plugin.tx_nursing_list {
 page.includeCSS {
     tx_nursing = EXT:nursing/Resources/Public/Css/nursing_styles.css
 }
-
-# these classes are only used in auto-generated templates
-plugin.tx_nursing._CSS_DEFAULT_STYLE (
-    textarea.f3-form-error {
-        background-color:#FF9F9F;
-        border: 1px #FF0000 solid;
-    }
-
-    input.f3-form-error {
-        background-color:#FF9F9F;
-        border: 1px #FF0000 solid;
-    }
-
-    .tx-nursing table {
-        border-collapse:separate;
-        border-spacing:10px;
-    }
-
-    .tx-nursing table th {
-        font-weight:bold;
-    }
-
-    .tx-nursing table td {
-        vertical-align:top;
-    }
-
-    .typo3-messages .message-error {
-        color:red;
-    }
-
-    .typo3-messages .message-ok {
-        color:green;
-    }
-)
