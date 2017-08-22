@@ -52,8 +52,10 @@ overwriteSettings:
 
   Resources:
     Private:
-      #Language: merge
+      Language: merge
       #Templates: keep
+    Public:
+      Icons: keep
 
   user_extension.svg: keep
 
