@@ -5,6 +5,12 @@ call_user_func(
     function()
     {
 
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+            'Joekolade.Nursing',
+            'List',
+            'List'
+        );
+
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('nursing', 'Configuration/TypoScript', 'Pflegeberufe');
 
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_nursing_domain_model_position', 'EXT:nursing/Resources/Private/Language/locallang_csh_tx_nursing_domain_model_position.xlf');

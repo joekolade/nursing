@@ -546,7 +546,17 @@
                 "role": "Developer"
             }
         ],
-        "plugins": [],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "",
+                    "noncacheableActions": "Position => list,show",
+                    "switchableActions": ""
+                },
+                "key": "list",
+                "name": "List"
+            }
+        ],
         "vendorName": "Joekolade"
     },
     "wires": [
@@ -624,7 +634,7 @@
         }
     ],
     "log": {
-        "last_modified": "2017-08-22 12:20",
+        "last_modified": "2017-08-22 01:11",
         "extension_builder_version": "8.7.0",
         "be_user": " (1)"
     }
