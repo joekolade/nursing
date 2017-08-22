@@ -10,7 +10,7 @@ plugin.tx_nursing_list {
     }
     persistence {
         storagePid = {$plugin.tx_nursing_list.persistence.storagePid}
-        #recursive = 1
+        recursive = 2
     }
     features {
         #skipDefaultArguments = 1
