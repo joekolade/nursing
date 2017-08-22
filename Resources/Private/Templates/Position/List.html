@@ -5,52 +5,14 @@
 <f:section name="main">
 	<div class="tx-nursing-list">
 
-		<div class="tx-nursing__content">
-			<table class="tx_nursing">
-				<tr>
-					<th>
-						<f:translate key="tx_nursing_domain_model_position.title"/>
-					</th>
-					<th>
-						<f:translate key="tx_nursing_domain_model_position.description"/>
-					</th>
-					<th>
-						<f:translate key="tx_nursing_domain_model_position.images"/>
-					</th>
-					<th>
-						<f:translate key="tx_nursing_domain_model_position.topjob"/>
-					</th>
-					<th></th>
-					<th></th>
-				</tr>
+		<section class="tx-nursing__content">
 
 				<f:for each="{positions}" as="position">
-					<tr>
-						<td>
-							<f:link.action action="show" arguments="{position : position}"> {position.title}</f:link.action>
-						</td>
-						<td>
-							<f:link.action action="show" arguments="{position : position}"> {position.description}
-							</f:link.action>
-						</td>
-						<td>
-							<f:link.action action="show" arguments="{position : position}"> {position.images}
-							</f:link.action>
-						</td>
-						<td>
-							<f:link.action action="show" arguments="{position : position}"> {position.topjob}
-							</f:link.action>
-						</td>
-						<td>
-							<f:link.action action="edit" arguments="{position : position}">Edit</f:link.action>
-						</td>
-						<td>
-							<f:link.action action="delete" arguments="{position : position}">Delete</f:link.action>
-						</td>
-					</tr>
+
+					<f:render partial="Position/ListItem" arguments="{_all}"></f:render>
+
 				</f:for>
-			</table>
-		</div>
+		</section>
 		<div class="tx-nursing__aside">
 			<f:render partial="Filter" arguments="{_all}"></f:render>
 		</div>

@@ -1,0 +1,46 @@
+<article itemscope itemtype="http://schema.org/JobPosting" class="tx-nursing__item{f:if(condition: position.topjob, then: ' tx-nursing__item-top')}">
+	<h1 itemprop="title">
+		<f:link.action action="show" arguments="{position : position}"> {position.title}</f:link.action>
+	</h1>
+
+	<f:render partial="Position/Metadata" arguments="{position: position}"></f:render>
+
+	<div itemprop="description">
+		{position.description -> f:format.html()}
+	</div>
+
+
+	<f:link.action action="show" arguments="{position : position}"> {position.images}</f:link.action>
+
+
+
+	<p><strong>Responsibilities:</strong></p>
+	<ul itemprop="responsibilities">
+		<li>Design and write specifications for tools for in-house customers</li>
+		<li>Build tools according to specifications</li>
+	</ul>
+	<p><strong>Educational requirements:</strong></p>
+	<ul itemprop="educationRequirements">
+		<li>Bachelor's Degree in Computer Science, Information Systems or related fields of study.</li>
+	</ul>
+	<p><strong>Experience requirements:</strong></p>
+	<ul itemprop="experienceRequirements">
+		<li>Minumum 3 years experience as a software engineer</li>
+	</ul>
+	<p><strong>Desired Skills:</strong></p>
+	<ul itemprop="skills">
+		<li>Web application development using Java/J2EE</li>
+		<li>Web application development using Python or familiarity with dynamic programming languages</li>
+	</ul>
+	<p><strong>Qualifications:</strong></p>
+	<ul itemprop="qualifications">
+		<li>Ability to work in a team environment with members of varying skill levels.</li>
+		<li>Highly motivated.</li>
+		<li>Learns quickly.</li>
+	</ul>
+	<p><strong>Benefits:</strong></p>
+	<ul><li>ABC Corp provides top-tier employee compensation benefits and a relaxed, team-oriented work environment, including:<span itemprop="jobBenefits"> Medical, Life, Dental</span></li>
+	</ul>
+
+
+</article>

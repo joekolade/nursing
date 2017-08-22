@@ -7,5 +7,10 @@
     grid-area: content; }
   .tx-nursing-list .tx-nursing__aside {
     grid-area: sidebar; }
+.tx-nursing .tx-nursing__item-meta {
+  margin: 1em 0px;
+  padding: 1em 0px;
+  border: solid #cdcdcd;
+  border-width: 1px 0; }
 
 /*# sourceMappingURL=nursing_styles.css.map */
