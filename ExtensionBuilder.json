@@ -344,20 +344,20 @@
                             "maxItems": "1",
                             "propertyDescription": "",
                             "propertyIsExcludeField": true,
-                            "propertyIsRequired": false,
-                            "propertyName": "zip",
+                            "propertyIsRequired": true,
+                            "propertyName": "title",
                             "propertyType": "String",
-                            "uid": "1092153860774"
+                            "uid": "575860090994"
                         },
                         {
                             "allowedFileTypes": "",
                             "maxItems": "1",
                             "propertyDescription": "",
                             "propertyIsExcludeField": true,
-                            "propertyIsRequired": true,
-                            "propertyName": "title",
+                            "propertyIsRequired": false,
+                            "propertyName": "zip",
                             "propertyType": "String",
-                            "uid": "575860090994"
+                            "uid": "1092153860774"
                         }
                     ]
                 },
@@ -644,7 +644,7 @@
         }
     ],
     "log": {
-        "last_modified": "2017-08-22 11:55",
+        "last_modified": "2017-08-22 12:15",
         "extension_builder_version": "8.7.0",
         "be_user": " (1)"
     }

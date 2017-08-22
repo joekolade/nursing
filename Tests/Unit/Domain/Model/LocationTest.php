@@ -27,31 +27,6 @@ class LocationTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function getZipReturnsInitialValueForString()
-    {
-        self::assertSame(
-            '',
-            $this->subject->getZip()
-        );
-    }
-
-    /**
-     * @test
-     */
-    public function setZipForStringSetsZip()
-    {
-        $this->subject->setZip('Conceived at T3CON10');
-
-        self::assertAttributeEquals(
-            'Conceived at T3CON10',
-            'zip',
-            $this->subject
-        );
-    }
-
-    /**
-     * @test
-     */
     public function getTitleReturnsInitialValueForString()
     {
         self::assertSame(
@@ -70,6 +45,31 @@ class LocationTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
         self::assertAttributeEquals(
             'Conceived at T3CON10',
             'title',
+            $this->subject
+        );
+    }
+
+    /**
+     * @test
+     */
+    public function getZipReturnsInitialValueForString()
+    {
+        self::assertSame(
+            '',
+            $this->subject->getZip()
+        );
+    }
+
+    /**
+     * @test
+     */
+    public function setZipForStringSetsZip()
+    {
+        $this->subject->setZip('Conceived at T3CON10');
+
+        self::assertAttributeEquals(
+            'Conceived at T3CON10',
+            'zip',
             $this->subject
         );
     }

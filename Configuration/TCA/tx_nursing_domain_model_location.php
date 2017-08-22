@@ -2,7 +2,7 @@
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:nursing/Resources/Private/Language/locallang_db.xlf:tx_nursing_domain_model_location',
-        'label' => 'zip',
+        'label' => 'title',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
@@ -15,14 +15,14 @@ return [
         'enablecolumns' => [
             'disabled' => 'hidden',
         ],
-        'searchFields' => 'zip,title,regions',
+        'searchFields' => 'title,zip,regions',
         'iconfile' => 'EXT:nursing/Resources/Public/Icons/tx_nursing_domain_model_location.gif'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, zip, title, regions',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, zip, regions',
     ],
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, zip, title, regions'],
+        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, zip, regions'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -82,15 +82,6 @@ return [
             ],
         ],
 
-        'zip' => [
-            'exclude' => true,
-            'label' => 'LLL:EXT:nursing/Resources/Private/Language/locallang_db.xlf:tx_nursing_domain_model_location.zip',
-            'config' => [
-                'type' => 'input',
-                'size' => 30,
-                'eval' => 'trim'
-            ],
-        ],
         'title' => [
             'exclude' => true,
             'label' => 'LLL:EXT:nursing/Resources/Private/Language/locallang_db.xlf:tx_nursing_domain_model_location.title',
@@ -98,6 +89,15 @@ return [
                 'type' => 'input',
                 'size' => 30,
                 'eval' => 'trim,required'
+            ],
+        ],
+        'zip' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:nursing/Resources/Private/Language/locallang_db.xlf:tx_nursing_domain_model_location.zip',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim'
             ],
         ],
         'regions' => [
