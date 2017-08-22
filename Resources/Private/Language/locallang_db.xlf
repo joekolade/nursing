@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-08-22T11:55:11Z" product-name="nursing">
+		<header/>
+		<body>
+			<trans-unit id="tx_nursing_domain_model_position">
+				<source>Position</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_position.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_position.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_position.images">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_position.topjob">
+				<source>Topjob</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_position.tx_csseo">
+				<source>Tx Csseo</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_position.employments">
+				<source>Employments</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_position.types">
+				<source>Types</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_position.extras">
+				<source>Extras</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_position.location">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_position.employer">
+				<source>Employer</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_employment">
+				<source>Employment</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_employment.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_employer">
+				<source>Employer</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_employer.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_employer.logo">
+				<source>Logo</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_employer.address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_employer.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_employer.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_employer.url">
+				<source>Url</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_employer.tx_csseo">
+				<source>Tx Csseo</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_location">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_location.zip">
+				<source>Zip</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_location.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_location.regions">
+				<source>Regions</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_region">
+				<source>Region</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_region.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_type.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_extra">
+				<source>Extra</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_extra.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_extra.note">
+				<source>Note</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

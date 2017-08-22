@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-08-22T11:55:11Z" product-name="nursing">
+		<header/>
+		<body>
+			<trans-unit id="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="images.description">
+				<source>images</source>
+			</trans-unit>
+			<trans-unit id="topjob.description">
+				<source>topjob</source>
+			</trans-unit>
+			<trans-unit id="tx_csseo.description">
+				<source>txCsseo</source>
+			</trans-unit>
+			<trans-unit id="employments.description">
+				<source>employments</source>
+			</trans-unit>
+			<trans-unit id="types.description">
+				<source>types</source>
+			</trans-unit>
+			<trans-unit id="extras.description">
+				<source>extras</source>
+			</trans-unit>
+			<trans-unit id="location.description">
+				<source>location</source>
+			</trans-unit>
+			<trans-unit id="employer.description">
+				<source>employer</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

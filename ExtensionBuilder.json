@@ -1,5 +1,544 @@
 {
-    "modules": [],
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    47,
+                    74
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": true,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": []
+                },
+                "name": "Position",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": true,
+                    "type": "Entity",
+                    "uid": "649148827946"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": true,
+                            "propertyName": "title",
+                            "propertyType": "String",
+                            "uid": "106983836772"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "description",
+                            "propertyType": "RichText",
+                            "uid": "473310438848"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "10",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "images",
+                            "propertyType": "Image",
+                            "uid": "822137538877"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "topjob",
+                            "propertyType": "Boolean",
+                            "uid": "644275497254"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "txCsseo",
+                            "propertyType": "Integer",
+                            "uid": "413607112000"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": [
+                        {
+                            "foreignRelationClass": "",
+                            "lazyLoading": false,
+                            "propertyIsExcludeField": true,
+                            "relationDescription": "",
+                            "relationName": "employments",
+                            "relationType": "manyToMany",
+                            "relationWire": "[wired]",
+                            "renderType": "selectMultipleSideBySide",
+                            "uid": "54538201888"
+                        },
+                        {
+                            "foreignRelationClass": "",
+                            "lazyLoading": false,
+                            "propertyIsExcludeField": true,
+                            "relationDescription": "",
+                            "relationName": "types",
+                            "relationType": "manyToMany",
+                            "relationWire": "[wired]",
+                            "renderType": "selectMultipleSideBySide",
+                            "uid": "365534165298"
+                        },
+                        {
+                            "foreignRelationClass": "",
+                            "lazyLoading": false,
+                            "propertyIsExcludeField": true,
+                            "relationDescription": "",
+                            "relationName": "extras",
+                            "relationType": "manyToMany",
+                            "relationWire": "[wired]",
+                            "renderType": "selectMultipleSideBySide",
+                            "uid": "1456918525723"
+                        },
+                        {
+                            "foreignRelationClass": "",
+                            "lazyLoading": false,
+                            "propertyIsExcludeField": true,
+                            "relationDescription": "",
+                            "relationName": "location",
+                            "relationType": "manyToOne",
+                            "relationWire": "[wired]",
+                            "renderType": "selectSingle",
+                            "uid": "1348334290341"
+                        },
+                        {
+                            "foreignRelationClass": "",
+                            "lazyLoading": false,
+                            "propertyIsExcludeField": true,
+                            "relationDescription": "",
+                            "relationName": "employer",
+                            "relationType": "manyToOne",
+                            "relationWire": "[wired]",
+                            "renderType": "selectSingle",
+                            "uid": "83629178546"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "config": {
+                "position": [
+                    425,
+                    61
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": false,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": []
+                },
+                "name": "Employment",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": false,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": true,
+                    "type": "Entity",
+                    "uid": "228318088521"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": true,
+                            "propertyName": "title",
+                            "propertyType": "String",
+                            "uid": "94873972471"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        },
+        {
+            "config": {
+                "position": [
+                    60,
+                    467
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": false,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": []
+                },
+                "name": "Employer",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "1079174175442"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": true,
+                            "propertyName": "title",
+                            "propertyType": "String",
+                            "uid": "56861196225"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "logo",
+                            "propertyType": "Image",
+                            "uid": "372480894729"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "address",
+                            "propertyType": "RichText",
+                            "uid": "1495423728615"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "description",
+                            "propertyType": "RichText",
+                            "uid": "1428215135172"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "email",
+                            "propertyType": "String",
+                            "uid": "1278124242934"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "url",
+                            "propertyType": "String",
+                            "uid": "516728440008"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "txCsseo",
+                            "propertyType": "Integer",
+                            "uid": "1062365143358"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        },
+        {
+            "config": {
+                "position": [
+                    334,
+                    512
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": false,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": []
+                },
+                "name": "Location",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": false,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": true,
+                    "type": "Entity",
+                    "uid": "1499871036714"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "zip",
+                            "propertyType": "String",
+                            "uid": "1092153860774"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": true,
+                            "propertyName": "title",
+                            "propertyType": "String",
+                            "uid": "575860090994"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": [
+                        {
+                            "foreignRelationClass": "",
+                            "lazyLoading": false,
+                            "propertyIsExcludeField": true,
+                            "relationDescription": "",
+                            "relationName": "regions",
+                            "relationType": "manyToMany",
+                            "relationWire": "[wired]",
+                            "renderType": "selectMultipleSideBySide",
+                            "uid": "877251084535"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "config": {
+                "position": [
+                    652,
+                    483
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": false,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": []
+                },
+                "name": "Region",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": false,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "759498982598"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": true,
+                            "propertyName": "title",
+                            "propertyType": "String",
+                            "uid": "795032959645"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        },
+        {
+            "config": {
+                "position": [
+                    513,
+                    214
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": false,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": []
+                },
+                "name": "Type",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": false,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": true,
+                    "type": "Entity",
+                    "uid": "1167398449226"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": true,
+                            "propertyName": "title",
+                            "propertyType": "String",
+                            "uid": "875974147989"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        },
+        {
+            "config": {
+                "position": [
+                    638,
+                    306
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": false,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": []
+                },
+                "name": "Extra",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": false,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": true,
+                    "type": "Entity",
+                    "uid": "1136004679767"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": true,
+                            "propertyName": "title",
+                            "propertyType": "String",
+                            "uid": "1228351391758"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "note",
+                            "propertyType": "Text",
+                            "uid": "27954680711"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
     "properties": {
         "backendModules": [],
         "description": "Manage a Nursing Profession Pool",
@@ -17,8 +556,8 @@
         },
         "extensionKey": "nursing",
         "name": "Pflegeberufe",
-        "originalExtensionKey": "",
-        "originalVendorName": "",
+        "originalExtensionKey": "nursing",
+        "originalVendorName": "Joekolade",
         "persons": [
             {
                 "company": "Sch\u00e4fer \u2013 B\u00fcro f\u00fcr Webentwicklung",
@@ -30,9 +569,82 @@
         "plugins": [],
         "vendorName": "Joekolade"
     },
-    "wires": [],
+    "wires": [
+        {
+            "src": {
+                "moduleId": 0,
+                "terminal": "relationWire_0",
+                "uid": "54538201888"
+            },
+            "tgt": {
+                "moduleId": 1,
+                "terminal": "SOURCES",
+                "uid": "228318088521"
+            }
+        },
+        {
+            "src": {
+                "moduleId": 0,
+                "terminal": "relationWire_1",
+                "uid": "365534165298"
+            },
+            "tgt": {
+                "moduleId": 5,
+                "terminal": "SOURCES",
+                "uid": "1167398449226"
+            }
+        },
+        {
+            "src": {
+                "moduleId": 0,
+                "terminal": "relationWire_2",
+                "uid": "1456918525723"
+            },
+            "tgt": {
+                "moduleId": 6,
+                "terminal": "SOURCES",
+                "uid": "1136004679767"
+            }
+        },
+        {
+            "src": {
+                "moduleId": 0,
+                "terminal": "relationWire_3",
+                "uid": "1348334290341"
+            },
+            "tgt": {
+                "moduleId": 3,
+                "terminal": "SOURCES",
+                "uid": "1499871036714"
+            }
+        },
+        {
+            "src": {
+                "moduleId": 0,
+                "terminal": "relationWire_4",
+                "uid": "83629178546"
+            },
+            "tgt": {
+                "moduleId": 2,
+                "terminal": "SOURCES",
+                "uid": "1079174175442"
+            }
+        },
+        {
+            "src": {
+                "moduleId": 3,
+                "terminal": "relationWire_0",
+                "uid": "877251084535"
+            },
+            "tgt": {
+                "moduleId": 4,
+                "terminal": "SOURCES",
+                "uid": "759498982598"
+            }
+        }
+    ],
     "log": {
-        "last_modified": "2017-08-14 02:03",
+        "last_modified": "2017-08-22 11:55",
         "extension_builder_version": "8.7.0",
         "be_user": " (1)"
     }
