@@ -72,16 +72,6 @@
                             "propertyName": "topjob",
                             "propertyType": "Boolean",
                             "uid": "644275497254"
-                        },
-                        {
-                            "allowedFileTypes": "",
-                            "maxItems": "1",
-                            "propertyDescription": "",
-                            "propertyIsExcludeField": true,
-                            "propertyIsRequired": false,
-                            "propertyName": "txCsseo",
-                            "propertyType": "Integer",
-                            "uid": "413607112000"
                         }
                     ]
                 },
@@ -288,16 +278,6 @@
                             "propertyName": "url",
                             "propertyType": "String",
                             "uid": "516728440008"
-                        },
-                        {
-                            "allowedFileTypes": "",
-                            "maxItems": "1",
-                            "propertyDescription": "",
-                            "propertyIsExcludeField": true,
-                            "propertyIsRequired": false,
-                            "propertyName": "txCsseo",
-                            "propertyType": "Integer",
-                            "uid": "1062365143358"
                         }
                     ]
                 },
@@ -644,7 +624,7 @@
         }
     ],
     "log": {
-        "last_modified": "2017-08-22 12:15",
+        "last_modified": "2017-08-22 12:20",
         "extension_builder_version": "8.7.0",
         "be_user": " (1)"
     }

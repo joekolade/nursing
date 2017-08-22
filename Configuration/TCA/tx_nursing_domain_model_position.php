@@ -17,14 +17,14 @@ return [
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'searchFields' => 'title,description,images,topjob,tx_csseo,employments,types,extras,location,employer',
+        'searchFields' => 'title,description,images,topjob,employments,types,extras,location,employer',
         'iconfile' => 'EXT:nursing/Resources/Public/Icons/tx_nursing_domain_model_position.gif'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, description, images, topjob, tx_csseo, employments, types, extras, location, employer',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, description, images, topjob, employments, types, extras, location, employer',
     ],
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, description, images, topjob, tx_csseo, employments, types, extras, location, employer, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
+        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, description, images, topjob, employments, types, extras, location, employer, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -188,15 +188,6 @@ return [
                     ]
                 ],
                 'default' => 0,
-            ]
-        ],
-        'tx_csseo' => [
-            'exclude' => true,
-            'label' => 'LLL:EXT:nursing/Resources/Private/Language/locallang_db.xlf:tx_nursing_domain_model_position.tx_csseo',
-            'config' => [
-                'type' => 'input',
-                'size' => 4,
-                'eval' => 'int'
             ]
         ],
         'employments' => [

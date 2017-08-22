@@ -10,7 +10,6 @@ CREATE TABLE tx_nursing_domain_model_position (
 	description text,
 	images int(11) unsigned DEFAULT '0' NOT NULL,
 	topjob smallint(5) unsigned DEFAULT '0' NOT NULL,
-	tx_csseo int(11) DEFAULT '0' NOT NULL,
 	employments int(11) unsigned DEFAULT '0' NOT NULL,
 	types int(11) unsigned DEFAULT '0' NOT NULL,
 	extras int(11) unsigned DEFAULT '0' NOT NULL,
@@ -101,7 +100,6 @@ CREATE TABLE tx_nursing_domain_model_employer (
 	description text,
 	email varchar(255) DEFAULT '' NOT NULL,
 	url varchar(255) DEFAULT '' NOT NULL,
-	tx_csseo int(11) DEFAULT '0' NOT NULL,
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,
@@ -345,4 +343,18 @@ CREATE TABLE tx_nursing_location_region_mm (
 	PRIMARY KEY (uid_local,uid_foreign),
 	KEY uid_local (uid_local),
 	KEY uid_foreign (uid_foreign)
+);
+
+## EXTENSION BUILDER DEFAULTS END TOKEN - Everything BEFORE this line is overwritten with the defaults of the extension builder
+
+CREATE TABLE tx_nursing_domain_model_position (
+
+	tx_csseo int(11) DEFAULT '0' NOT NULL,
+
+);
+
+CREATE TABLE tx_nursing_domain_model_employer (
+
+	tx_csseo int(11) DEFAULT '0' NOT NULL,
+
 );

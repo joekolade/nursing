@@ -18,19 +18,19 @@ namespace Joekolade\Nursing\Domain\Model;
 class Location extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
     /**
-     * zip
-     *
-     * @var string
-     */
-    protected $zip = '';
-
-    /**
      * title
      *
      * @var string
      * @validate NotEmpty
      */
     protected $title = '';
+
+    /**
+     * zip
+     *
+     * @var string
+     */
+    protected $zip = '';
 
     /**
      * regions

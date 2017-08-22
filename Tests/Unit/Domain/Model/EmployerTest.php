@@ -174,29 +174,4 @@ class EmployerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
             $this->subject
         );
     }
-
-    /**
-     * @test
-     */
-    public function getTxCsseoReturnsInitialValueForInt()
-    {
-        self::assertSame(
-            0,
-            $this->subject->getTxCsseo()
-        );
-    }
-
-    /**
-     * @test
-     */
-    public function setTxCsseoForIntSetsTxCsseo()
-    {
-        $this->subject->setTxCsseo(12);
-
-        self::assertAttributeEquals(
-            12,
-            'txCsseo',
-            $this->subject
-        );
-    }
 }

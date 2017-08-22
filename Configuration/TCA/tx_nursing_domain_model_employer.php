@@ -16,14 +16,14 @@ return [
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'searchFields' => 'title,logo,address,description,email,url,tx_csseo',
+        'searchFields' => 'title,logo,address,description,email,url',
         'iconfile' => 'EXT:nursing/Resources/Public/Icons/tx_nursing_domain_model_employer.gif'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, logo, address, description, email, url, tx_csseo',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, logo, address, description, email, url',
     ],
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, logo, address, description, email, url, tx_csseo, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
+        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, logo, address, description, email, url, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -202,15 +202,6 @@ return [
                 'size' => 30,
                 'eval' => 'trim'
             ],
-        ],
-        'tx_csseo' => [
-            'exclude' => true,
-            'label' => 'LLL:EXT:nursing/Resources/Private/Language/locallang_db.xlf:tx_nursing_domain_model_employer.tx_csseo',
-            'config' => [
-                'type' => 'input',
-                'size' => 4,
-                'eval' => 'int'
-            ]
         ],
     
     ],

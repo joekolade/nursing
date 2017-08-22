@@ -63,7 +63,7 @@ overwriteSettings:
 
 #  ext_tables.php: merge
 
-#  ext_tables.sql: merge
+  ext_tables.sql: merge
 
 ## use static date attribute in xliff files ##
 #staticDateInXliffFiles: 2017-08-14T14:03:00Z

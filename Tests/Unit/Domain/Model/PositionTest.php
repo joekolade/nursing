@@ -165,31 +165,6 @@ class PositionTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
     /**
      * @test
      */
-    public function getTxCsseoReturnsInitialValueForInt()
-    {
-        self::assertSame(
-            0,
-            $this->subject->getTxCsseo()
-        );
-    }
-
-    /**
-     * @test
-     */
-    public function setTxCsseoForIntSetsTxCsseo()
-    {
-        $this->subject->setTxCsseo(12);
-
-        self::assertAttributeEquals(
-            12,
-            'txCsseo',
-            $this->subject
-        );
-    }
-
-    /**
-     * @test
-     */
     public function getEmploymentsReturnsInitialValueForEmployment()
     {
         $newObjectStorage = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();

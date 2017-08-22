@@ -62,13 +62,6 @@ class Employer extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $url = '';
 
     /**
-     * txCsseo
-     *
-     * @var int
-     */
-    protected $txCsseo = 0;
-
-    /**
      * Returns the title
      *
      * @return string $title
@@ -192,26 +185,5 @@ class Employer extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setUrl($url)
     {
         $this->url = $url;
-    }
-
-    /**
-     * Returns the txCsseo
-     *
-     * @return int $txCsseo
-     */
-    public function getTxCsseo()
-    {
-        return $this->txCsseo;
-    }
-
-    /**
-     * Sets the txCsseo
-     *
-     * @param int $txCsseo
-     * @return void
-     */
-    public function setTxCsseo($txCsseo)
-    {
-        $this->txCsseo = $txCsseo;
     }
 }

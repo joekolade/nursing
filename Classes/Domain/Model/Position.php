@@ -48,13 +48,6 @@ class Position extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $topjob = false;
 
     /**
-     * txCsseo
-     *
-     * @var int
-     */
-    protected $txCsseo = 0;
-
-    /**
      * employments
      *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Joekolade\Nursing\Domain\Model\Employment>
@@ -399,26 +392,5 @@ class Position extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function isTopjob()
     {
         return $this->topjob;
-    }
-
-    /**
-     * Returns the txCsseo
-     *
-     * @return int $txCsseo
-     */
-    public function getTxCsseo()
-    {
-        return $this->txCsseo;
-    }
-
-    /**
-     * Sets the txCsseo
-     *
-     * @param int $txCsseo
-     * @return void
-     */
-    public function setTxCsseo($txCsseo)
-    {
-        $this->txCsseo = $txCsseo;
     }
 }

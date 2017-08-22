@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2017-08-22T12:15:05Z" product-name="nursing">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-08-22T12:20:55Z" product-name="nursing">
 		<header/>
 		<body>
 			<trans-unit id="tx_nursing_domain_model_position">
@@ -17,9 +17,6 @@
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_position.topjob">
 				<source>TOP-Job</source>
-			</trans-unit>
-			<trans-unit id="tx_nursing_domain_model_position.tx_csseo">
-				<source>Csseo</source>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_position.employments">
 				<source>Employments</source>
@@ -63,9 +60,6 @@
 			<trans-unit id="tx_nursing_domain_model_employer.url">
 				<source>Url</source>
 			</trans-unit>
-			<trans-unit id="tx_nursing_domain_model_employer.tx_csseo">
-				<source>Tx Csseo</source>
-			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_location">
 				<source>Location</source>
 			</trans-unit>
@@ -98,6 +92,12 @@
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_extra.note">
 				<source>Note</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_position.tx_csseo">
+				<source>Csseo</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_employer.tx_csseo">
+				<source>Tx Csseo</source>
 			</trans-unit>
 		</body>
 	</file>
