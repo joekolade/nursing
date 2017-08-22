@@ -1,0 +1,38 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<table class="tx-nursing" >
+	<tr>
+		<td>
+			<f:translate key="tx_nursing_domain_model_position.title" />
+		</td>
+		<td>
+		{position.title}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_nursing_domain_model_position.description" />
+		</td>
+		<td>
+		{position.description}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_nursing_domain_model_position.images" />
+		</td>
+		<td>
+				<f:for each="{position.images}" as="image" >
+					<f:image src="{image.originalResource.publicUrl}" width="200"/>
+				</f:for>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_nursing_domain_model_position.topjob" />
+		</td>
+		<td>
+		{position.topjob}
+		</td>
+	</tr>
+</table>
+</html>
