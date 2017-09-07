@@ -38,10 +38,9 @@ class PositionController extends \Joekolade\Nursing\Controller\AbstractControlle
 
         $employments = $this->employmentRepository->findAll();
         $extras = $this->extraRepository->findAll();
-        
-        \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($filter, 'Filter');
 
-        $positions = $this->positionRepository->findAll();
+        $positions = $this->positionRepository->findByFilter($filter);
+
         $this->view->assignMultiple([
             'positions' => $positions,
             'filter' => $filter,
