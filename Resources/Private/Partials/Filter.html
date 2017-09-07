@@ -1,18 +1,40 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
+<html xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
-<f:form object="{filter}" objectName="filter">
+<f:form method="POST" object="{filter}" objectName="filter">
 
 	<h2>Suche ändern</h2>
 
 	<!-- Filter: Stellenbeschreibung -->
-	<f:form.select property="types" options="{types}"></f:form.select>
+	<div class="form-group">
+		<label for="filterTypes">filterTypes</label>
+		<f:form.select id="filterTypes" class="form-control" multiple="true" optionLabelField="title"
+					   optionsAfterContent="true" property="types" options="{types}">
+		</f:form.select>
+	</div>
 
 	<!-- Filter: Wo -->
-	<f:form.select property="e" options="{types}"></f:form.select>
+	<div class="form-group">
+		<label for="filterLocations">filterLocations</label>
+		<f:form.select id="filterLocations" class="form-control" multiple="true" optionLabelField="title" optionsAfterContent="true"
+					   property="locations" options="{locations}">
+		</f:form.select>
+	</div>
 
 	<!-- Filter: Beschäftigungsverhältnis -->
+	<div class="form-group">
+		<label for="filterEmployments">filterEmployments</label>
+		<f:form.select id="filterEmployments" class="form-control" multiple="true" optionLabelField="title" optionsAfterContent="true" property="employments" options="{employments}">
+		</f:form.select>
+	</div>
 
 	<!-- Filter: Extras -->
+	<div class="form-group">
+		<label for="filterExtras">filterExtras</label>
+		<f:form.select id="filterExtras" class="form-control" multiple="true" optionLabelField="title" optionsAfterContent="true"
+					   property="extras" options="{extras}">
+		</f:form.select>
+	</div>
 
+	<f:form.submit value="Filter!"></f:form.submit>
 
 </f:form>
