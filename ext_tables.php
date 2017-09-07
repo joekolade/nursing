@@ -34,5 +34,8 @@ call_user_func(
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_nursing_domain_model_extra', 'EXT:nursing/Resources/Private/Language/locallang_csh_tx_nursing_domain_model_extra.xlf');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_nursing_domain_model_extra');
 
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_nursing_domain_model_filter', 'EXT:nursing/Resources/Private/Language/locallang_csh_tx_nursing_domain_model_filter.xlf');
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_nursing_domain_model_filter');
+
     }
 );

@@ -1,0 +1,56 @@
+<div class="tx-nursing__item-meta">
+
+	<f:comment>
+		Employment / Verhältnis
+	</f:comment>
+	<div itemprop="employmentType">
+		<f:for each="{position.employments}" as="employment" iteration="i">
+			{employment.title}
+			<f:render section="divider" arguments="{i: i}"></f:render>
+		</f:for>
+	</div>
+
+	<f:comment>
+		Location / Ort + Region
+	</f:comment>
+	<div itemprop="jobLocation" itemscope itemtype="http://schema.org/Place">
+	<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+    	<span itemprop="addressLocality">{position.location.title}</span>
+		<f:if condition="{position.location.regions}">
+			// <span itemprop="addressRegion"></span>
+			<f:for each="{position.location.regions}" as="region" iteration="i">
+				{region.title}
+				<f:render section="divider" arguments="{i: i}"></f:render>
+			</f:for>
+			</span>
+		</f:if>
+		</span>
+	</div>
+
+	<f:comment>
+		Type / Art
+	</f:comment>
+	<div itemprop="industry">
+		<f:for each="{position.types}" as="type" iteration="i">
+			{type.title}
+			<f:render section="divider" arguments="{i: i}"></f:render>
+		</f:for>
+	</div>
+
+	<f:comment>
+		Employer / Arbeitgeber
+	</f:comment>
+	<div itemprop="hiringOrganization" itemscope itemtype="http://schema.org/Organization">
+		<span itemprop="name">{position.employer.title}</span>
+		(Link auf Arbeitgeberseite)
+	</div>
+
+</div>
+
+
+<f:section name="divider">
+	<f:if condition="{i.isLast}">
+		<f:then></f:then>
+		<f:else>|</f:else>
+	</f:if>
+</f:section>

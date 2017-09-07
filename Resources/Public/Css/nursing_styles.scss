@@ -5,6 +5,8 @@
 $filter-width-md: 200px;
 $grid-gap: 30px;
 
+$pill-pad: 3px;
+
 .tx-nursing {
 
   	// List
@@ -28,8 +30,16 @@ $grid-gap: 30px;
 	.tx-nursing__item {}
 	.tx-nursing__item-meta {
 	  margin: 1em 0px;
-	  padding: 1em 0px;
+	  padding: 1em 0px calc(1em - #{$pill-pad * 2});
 	  border: solid #cdcdcd;
 	  border-width: 1px 0;
+
+	  > div[itemprop] {
+	  	display: inline-block;
+		background: lighten(#000, 95%);
+		padding: $pill-pad $pill-pad*2;
+		margin: 0 $pill-pad*2 $pill-pad*2;
+		border-radius: $pill-pad;
+	  }
 	}
 }
