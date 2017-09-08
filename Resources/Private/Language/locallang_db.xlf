@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2017-09-07T22:31:04Z" product-name="nursing">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-09-07T23:25:36Z" product-name="nursing">
 		<header/>
 		<body>
 			<trans-unit id="tx_nursing_domain_model_position">
@@ -95,6 +95,9 @@
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_filter">
 				<source>Filter</source>
+			</trans-unit>
+			<trans-unit id="tx_nursing_domain_model_filter.locs">
+				<source>Locs</source>
 			</trans-unit>
 			<trans-unit id="tx_nursing_domain_model_filter.types">
 				<source>Types</source>

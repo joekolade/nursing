@@ -17,37 +17,42 @@ namespace Joekolade\Nursing\Controller;
  */
 class PositionController extends \Joekolade\Nursing\Controller\AbstractController
 {
+    /**
+     * positionRepository
+     *
+     * @var \Joekolade\Nursing\Domain\Repository\PositionRepository
+     * @inject
+     */
+    protected $positionRepository = null;
 
     /**
      * action list
      *
      * @param \Joekolade\Nursing\Domain\Model\Filter $filter
-     *
      * @return void
      */
     public function listAction($filter = NULL)
     {
-        if(empty($filter)) {
+        if (empty($filter)) {
             $filter = new \Joekolade\Nursing\Domain\Model\Filter();
         }
-
         $types = $this->typeRepository->findAll();
-
         // Build
-        $locs = $this->buildLocs();
-
+        $locations = $this->locationRepository->findAll();
+        $regions = $this->regionRepository->findAll();
+        //$locs = $this->buildLocs();
+        \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($filter);
         $employments = $this->employmentRepository->findAll();
         $extras = $this->extraRepository->findAll();
-
         $positions = $this->positionRepository->findByFilter($filter);
-
         $this->view->assignMultiple([
             'positions' => $positions,
             'filter' => $filter,
             'types' => $types,
-            'locations' => $locs,
+            'locations' => $locations,
+            'regions' => $regions,
             'employments' => $employments,
-            'extras' => $extras,
+            'extras' => $extras
         ]);
     }
 

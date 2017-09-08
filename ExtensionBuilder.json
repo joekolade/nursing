@@ -550,7 +550,18 @@
                     "uid": "1271249095991"
                 },
                 "propertyGroup": {
-                    "properties": []
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "locs",
+                            "propertyType": "String",
+                            "uid": "1391006840187"
+                        }
+                    ]
                 },
                 "relationGroup": {
                     "relations": [
@@ -789,7 +800,7 @@
         }
     ],
     "log": {
-        "last_modified": "2017-09-07 10:31",
+        "last_modified": "2017-09-07 11:25",
         "extension_builder_version": "8.7.0",
         "be_user": " (1)"
     }

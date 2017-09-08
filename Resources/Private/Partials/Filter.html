@@ -15,9 +15,19 @@
 	<!-- Filter: Wo -->
 	<div class="form-group">
 		<label for="filterLocations">filterLocations</label>
-		<f:form.select id="filterLocations" class="form-control" multiple="true" optionLabelField="title" optionsAfterContent="true"
-					   property="locations" options="{locations}">
-		</f:form.select>
+
+		<select id="filterLocations" class="form-control" multiple="true" name="tx_nursing_list[filter][locs]">
+			<optgroup label="Locations">
+				<f:for each="{locations}" as="location">
+					<option value="l_{location.uid}">{location.title}</option>
+				</f:for>
+			</optgroup>
+			<optgroup label="Regions">
+				<f:for each="{regions}" as="region">
+					<option value="r_{region.uid}">{region.title}</option>
+				</f:for>
+			</optgroup>
+		</select>
 	</div>
 
 	<!-- Filter: Beschäftigungsverhältnis -->

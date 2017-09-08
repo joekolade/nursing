@@ -28,66 +28,45 @@ class PositionRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
      * @param \Joekolade\Nursing\Domain\Model\Filter $filter
      * @return array|\TYPO3\CMS\Extbase\Persistence\QueryResultInterface
      */
-    public function findByFilter($filter) {
+    public function findByFilter($filter)
+    {
         $query = $this->createQuery();
-
         // Constraints initialisieren
         $constraints = [];
-
-        if($filter) {
-
+        if ($filter) {
             // $query->in('uid', $filteredArticles);
-
             // Types
-            //
-
-            if(count($filter->getTypes())){
+            if (count($filter->getTypes())) {
                 $optMatch = [];
-                foreach ($filter->getTypes() as $option){
+                foreach ($filter->getTypes() as $option) {
                     $optMatch[] = $query->contains('types', $option);
                 }
-
                 $constraints[] = $query->logicalOr($optMatch);
             }
-
             // todo: Places
-            //
-
             // Employments
-            //
-
-            if(count($filter->getEmployments())){
-
+            if (count($filter->getEmployments())) {
                 $optMatch = [];
-                foreach ($filter->getEmployments() as $option){
+                foreach ($filter->getEmployments() as $option) {
                     $optMatch[] = $query->contains('employments', $option);
                 }
-
                 $constraints[] = $query->logicalOr($optMatch);
             }
-
             // Extras
-            //
-
-            if(count($filter->getExtras())){
-
+            if (count($filter->getExtras())) {
                 $optMatch = [];
-                foreach ($filter->getExtras() as $option){
+                foreach ($filter->getExtras() as $option) {
                     $optMatch[] = $query->contains('extras', $option);
                 }
-
                 // Extras match with AND
                 $constraints[] = $query->logicalAnd($optMatch);
             }
         }
-
-        if(count($constraints)){
+        if (count($constraints)) {
             $query->matching($query->logicalAnd($constraints));
         }
-
-//        if($offset) $query->setOffset($offset);
-//        if($limit) $query->setLimit($limit);
-
+        //        if($offset) $query->setOffset($offset);
+        //        if($limit) $query->setLimit($limit);
         return $query->execute();
     }
 }
