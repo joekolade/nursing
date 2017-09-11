@@ -7,7 +7,7 @@
 	<!-- Filter: Stellenbeschreibung -->
 	<div class="form-group">
 		<label for="filterTypes">filterTypes</label>
-		<f:form.select id="filterTypes" class="form-control" multiple="true" optionLabelField="title"
+		<f:form.select id="filterTypes" class="form-control selectpicker" multiple="true" optionLabelField="title"
 					   optionsAfterContent="true" property="types" options="{types}">
 		</f:form.select>
 	</div>
@@ -16,7 +16,7 @@
 	<div class="form-group">
 		<label for="filterLocations">filterLocations</label>
 
-		<select id="filterLocations" class="form-control" multiple="true" name="tx_nursing_list[filter][locs]">
+		<select id="filterLocations" class="form-control selectpicker" multiple="true" name="tx_nursing_list[filter][locs]">
 			<optgroup label="Locations">
 				<f:for each="{locations}" as="location">
 					<option value="l_{location.uid}">{location.title}</option>

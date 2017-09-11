@@ -25,9 +25,14 @@ plugin.tx_nursing_list {
 }
 
 // @var page PAGE
+
 page.includeCSS {
     tx_nursing = EXT:nursing/Resources/Public/Css/nursing_styles.css
 }
+page.includeJSFooter {
+    tx_nursing = EXT:nursing/Resources/Public/JavaScript/tx_nursing.js
+}
+
 
 
 # Bootstrap select
