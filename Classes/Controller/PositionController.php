@@ -41,7 +41,7 @@ class PositionController extends \Joekolade\Nursing\Controller\AbstractControlle
         $locations = $this->locationRepository->findAll();
         $regions = $this->regionRepository->findAll();
         //$locs = $this->buildLocs();
-        \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($filter);
+
         $employments = $this->employmentRepository->findAll();
         $extras = $this->extraRepository->findAll();
         $positions = $this->positionRepository->findByFilter($filter);
