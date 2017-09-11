@@ -3,7 +3,7 @@ $(function(){
 	console.log('allo allo');
 
 	$('.selectpicker').selectpicker({
-		style: 'btn-info',
-		size: 4
+		//'header': 'Bitte auswählen'
+		liveSearch: true
 	});
 });

@@ -8,7 +8,9 @@
 	<div class="form-group">
 		<label for="filterTypes">filterTypes</label>
 		<f:form.select id="filterTypes" class="form-control selectpicker" multiple="true" optionLabelField="title"
-					   optionsAfterContent="true" property="types" options="{types}">
+					   optionsAfterContent="true" property="types" options="{types}"
+					   data="{none-selected-text: 'Was für eine Stelle suchen Sie'}"
+		>
 		</f:form.select>
 	</div>
 
@@ -16,7 +18,9 @@
 	<div class="form-group">
 		<label for="filterLocations">filterLocations</label>
 
-		<select id="filterLocations" class="form-control selectpicker" multiple="true" name="tx_nursing_list[filter][locs]">
+		<select id="filterLocations" class="form-control selectpicker" multiple="true" name="tx_nursing_list[filter][locs]"
+				data="{none-selected-text: 'Wo soll die Stelle sein'}"
+		>
 			<optgroup label="Locations">
 				<f:for each="{locations}" as="location">
 					<option value="l_{location.uid}">{location.title}</option>
@@ -33,15 +37,19 @@
 	<!-- Filter: Beschäftigungsverhältnis -->
 	<div class="form-group">
 		<label for="filterEmployments">filterEmployments</label>
-		<f:form.select id="filterEmployments" class="form-control" multiple="true" optionLabelField="title" optionsAfterContent="true" property="employments" options="{employments}">
+		<f:form.select id="filterEmployments" class="form-control selectpicker" multiple="true" optionLabelField="title" optionsAfterContent="true" property="employments" options="{employments}"
+					   data="{none-selected-text: 'Ihr gewünschtes Beschäftigungsverhältnis'}"
+		>
 		</f:form.select>
 	</div>
 
 	<!-- Filter: Extras -->
 	<div class="form-group">
 		<label for="filterExtras">filterExtras</label>
-		<f:form.select id="filterExtras" class="form-control" multiple="true" optionLabelField="title" optionsAfterContent="true"
-					   property="extras" options="{extras}">
+		<f:form.select id="filterExtras" class="form-control selectpicker" multiple="true" optionLabelField="title" optionsAfterContent="true"
+					   property="extras" options="{extras}"
+					   data="{none-selected-text: 'Extras, die Sie sich wünschen'}"
+		>
 		</f:form.select>
 	</div>
 
